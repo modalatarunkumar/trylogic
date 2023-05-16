@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            text-align: center;
+            /* align-items: center; */
+            display: grid;
+            grid-template-areas: 
+            "head head"
+            "content section"
+            "foot foot";
+            grid-template-rows: 25vh 40vh 25vh;
+            
+        }
+        header{
+            background-color: aqua;
+            grid-area: head;
+        }
+        aside{
+            background-color: green;
+            grid-area: content;
+        }
+        section{
+            background-color: blueviolet;
+            grid-area: section;
+        }
+        footer{
+            background-color: red;
+            grid-area: foot;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <header>Head</header>
+    <aside>Content</aside>
+    <section>Section</section>
+    <footer>Foot</footer>
+</main>
+
+</body>
+</html>

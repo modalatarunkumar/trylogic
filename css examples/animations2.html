@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .main{
+        height:70px;width:70px;
+        background: green;
+        position:relative;
+        animation:try 5s infinite normal;
+    }
+    @keyframes try {
+        0%{left:0;top:0;}
+        12%{left:300px;top:0px}
+        24%{left:300px;top:200px;}
+        36%{left:0px;top:200px;}
+        48%{left:300px;top:200px}
+        60%{left:300px;top:400px}
+        72%{left:0px;top:400px;}
+        84%{left:0px;top:200px;}
+        100%{left:0px;top:0px;}
+
+    }
+</style>
+<body>
+    <div class="main"></div>
+</body>
+</html>

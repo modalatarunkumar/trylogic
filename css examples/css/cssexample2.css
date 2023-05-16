@@ -1,0 +1,38 @@
+div{
+    border-radius: 25px;
+    margin-top: 10px;
+}
+.header{
+    width:100%;
+    height: 150px;
+    float: left;
+    background-color: red;
+    
+}
+h1{
+    color:white;
+}
+.sidebar1{
+    width:100%;
+    height: 75px;
+    background-color: green;
+    float: left;
+}
+.para{
+    width: 100%;
+    height: 250px;
+    background-color: yellow;
+    float: left;
+}
+.sidebar2{
+    width:100%;
+    height: 75px;
+    background-color: pink;
+    float: left;
+}
+.footer{
+    height:150px;
+    width: 100%;
+    background-color: darkblue;
+    float:left;
+}

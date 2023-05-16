@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent form</title>
+<style>
+    *{color:tomato;}
+    .main{
+        
+        height: 300px;
+        width:100%;
+        background: url('comp.jpeg');
+        background-size: 100% 50%;
+        float:left;
+        /* opacity: 0.5; */
+        /* filter: blur(0.5px); */
+    }
+    input[type="text"],input[type="password"]{
+        border: 0px solid transparent;
+        border-bottom: 5px solid black;
+        background: transparent;
+    }
+    input[type="submit"]{
+        padding: 8px 25px;
+        border-radius: 20px;
+        background: transparent;
+        border: 5px solid blue;
+        color:yellow;
+    }
+    input::placeholder{
+        color:white;
+    }
+    form{
+        /* filter: blur(0.5px);
+        background: transparent; */
+/* background: rgba(255, 255, 255, 0.5);*/
+        text-align: center;
+    }
+fieldset{
+    width:35%;
+    margin-left: 30%;
+    margin-top: 100px;
+    opacity: 1;
+
+}
+</style>
+</head>
+
+<body>
+    <div class="main">
+<fieldset>
+    <legend>Login form</legend>
+    <form>
+    <table>
+    <tr>
+        <td><label for="username">Username:</label></td>
+        <td><input type="text" id="username" name="username" placeholder="Enter Username"/></td>
+    </tr>
+    <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" id="password" name="password" placeholder="Enter Password"/></td>
+    </tr>
+    <tr><td colspan="2"><input type="checkbox" id="keep" name="keep"/><label for="keep">Keep me signed in on this device</label></td></tr>
+    <tr><td colspan="2"><input type="submit" value="Login"/></td></tr>
+        
+    
+</table>
+</form>
+</fieldset>
+</div>
+</body>
+</html>

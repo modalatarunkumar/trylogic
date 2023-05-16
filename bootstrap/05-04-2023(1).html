@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#" class="nav-link active" data-bs-toggle="tab" data-bs-target="#home">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#about">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#contact">Contact</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="home">This is home</div>
+            <div class="tab-pane" id="about">This is about</div>
+            <div class="tab-pane" id="contact">This is contact</div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#" class="nav-link active" data-bs-toggle="tab" data-bs-target="#login">Login</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#register">Register</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane" id="register">
+                <table class="mx-auto mt-4">
+                    <tr>
+                        <td><label for="name">Enter name</label> </td>
+                        <td>: <input type="text" name="name" id="name" placeholder="Please enter name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email id</label></td>
+                        <td>: <input type="email" name="email" id="email" placeholder="Please enter email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mno">Mobile number</label></td>
+                        <td>: <input type="number" name="mno" id="mno" placeholder="Enter mobile number"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pwd">Password</label></td>
+                        <td>: <input type="email" name="email" id="email" placeholder="Please type password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Confirm password</label></td>
+                        <td>: <input type="email" name="email" id="email" placeholder="Please enter email"></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-danger">Cancel</button></td>
+                        <td><button class="btn btn-success">Ok</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane active" id="login">
+                <table class="mx-auto mt-4">
+                    <tr>
+                        <td><label for="uname">Username:</label> </td>
+                        <td><input type="text" name="uname" id="uname" placeholder="Enter Username"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pwd">Password:</label></td>
+                        <td><input type="password" name="pwd" id="pwd" placeholder="Enter password"></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-danger">Cancel</button></td>
+                        <td><button class="btn btn-success">Ok</button></td>
+                    </tr>
+                </table>
+                Is not register. <a href="" class="nav-link text-primary" data-bs-toggle="tab" data-bs-target="register">register</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

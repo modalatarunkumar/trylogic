@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        .carousel-item{height:200px;width:100%;}
+        img{height:100%;width:100%;}
+        .container>h1{
+            background:linear-gradient(to right,red,white,green,orange,pink,violet,indigo,brown,yellow);
+            width:fit-content;
+            -webkit-background-clip: text;
+            color:transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="carousel slide mx-auto" data-bs-ride="carousel" id="car">
+            <div class="carousel-inner bg-success">
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-slide-to="0" data-bs-target="#car"></button>
+                    <button class="btn" type="button" data-bs-slide-to="1" data-bs-target="#car"></button>
+                    <button class="" type="button" data-bs-slide-to="2" data-bs-target="#car"></button>
+                </div>
+                <div class="carousel-item active" data-bs-interval="1200">
+                    <img src="img/image.png" alt="" >
+                    <div class="carousel-caption">
+                        <h1 class="text-success">This is text</h1> 
+                        
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="1200">
+                    <img src="img/profile3.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>This is text</h1>
+                    </div>    
+                </div>
+                <div class="carousel-item" data-bs-interval="1200">
+                    <img src="img/profile4.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>This is some text</h1>
+                    </div>    
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#car"><span class="carousel-control-prev-icon bg-dark"></span></button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#car"><span class="carousel-control-next-icon bg-dark"></span></button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>This is text</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Form4</title>
+</head>
+<body>
+<fieldset style="background:lightblue">
+<h2>Student Registration Form</h2>
+<hr style="color:white;background:white" noshade>
+<form>
+<label for="fname">Firstname<br>
+<input type="text" id="fname" name="fname" placeholder="Firstname"><br>
+<label for="mname">Middlename<br>
+<input type="text" id="mname" name="mname" placeholder="Middlename"><br>
+<label for="lname">Lastname<br>
+<input type="text" id="lname" name="lname" placeholder="Lastname"><br>
+<label>Course:</label>
+<select>
+<option>Course</option>
+</select><br>
+<label>Gender:</label><br>
+<input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+<input type="radio" name="gender" value="female" id="female"><label for="female">FeMale</label>
+<input type="radio" name="gender" value="other" id="other"><label for="other">Other</label><br>
+<label>Phone:</label><br>
+<input type="text" value="+91" required readonly><br>
+<input type="number" name="phone" placeholder="phone no"><br>
+<label>Current Address:</label><br>
+<textarea name="address" placeholder="Current Address"></textarea><br>
+<label for="email">Email:</label><br>
+<input type="email" name="email" id="email" placeholder="Enter Email"><br>
+<label for="password">Password</label><br>
+<input type="password" name="password" id="password" placeholder="Enter Password"><br>
+<label for="repassword">Re-type Password</label><br>
+<input type="password" name="repassword" id="repassword" placeholder="Retype Password"><br>
+<input type="submit" value="Register">
+</form>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong number</title>
+</head>
+<body>
+    <script>
+        var num=parseInt(prompt("Enter a number"));
+        var temp=num,sum=0,rem;
+        while(temp>0){
+            rem=temp%10;
+            sum+=rem**3;
+            temp=Math.floor(temp/10);
+        }
+        if(sum==num){
+            document.write(`${num} is ArmStrong number`);
+        }
+        else{
+            document.write(`${num} is not armstrong number`)
+        }
+    </script>
+</body>
+</html>

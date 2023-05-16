@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>even or odd</title>
+</head>
+<body>
+    <input type="number" id="val">
+    <button type="button" onclick="fun()">click me</button>
+    <h1 id="abc"></h1>
+    <script>
+        function fun()
+        {
+            var a=document.getElementById('val').value;
+            if(a%2==0)
+            document.getElementById('abc').innerHTML='even';
+            else
+            document.getElementById('abc').innerHTML='odd';
+            
+        }
+        
+    </script>
+</body>
+</html>
+

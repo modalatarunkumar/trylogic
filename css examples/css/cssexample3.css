@@ -1,0 +1,20 @@
+body div{
+    width:95%;
+    height:450px;
+    border:5px solid black;
+    margin:20px;
+}
+body div hr{
+    height: 20px;
+    width: 95%;
+    background-color:rgb(11, 26, 246);
+}
+h1{
+    color:rgb(11, 26, 246);
+}
+a{
+    color:orange;
+}
+h3{
+    color: gray;
+}

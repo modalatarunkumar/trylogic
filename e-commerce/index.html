@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bi.css">
+    <style>
+        .card{
+            height: 300px;
+            transform: scale(0.9);
+            transition: 0.8s;
+        }
+        .card .card-body span{
+            text-decoration: line-through;
+            text-decoration-color: red;
+        }
+        .card .card-body p.card-text,.card .card-body p.card-title{
+            font-weight: bold;
+        }
+        .card:hover{
+            transform: scale(1);
+            box-shadow: 0px 0px 1px pink,0px 0px 5px pink,0px 0px 1px pink,0px 0px 10px pink,0px 0px 10px pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="navbar navbar-expand-md">
+                <div class="col-4">
+                <div class="container">
+                    <button class="nav-brand btn btn-warning" data-bs-toggle="collapse" data-bs-target="#hide">&lt;Hide Filters</button>
+                </div>
+            </div>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#coll"><span class="navbar-toggler-icon"><i class="bi bi-lit"></i></span></button>
+        <div class="navbar-collapse collapse" id="coll">
+        <div class="col-12 col-md-5 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        
+                        <select name="" id="" >
+                            <option value="">Price</option>
+                            <option value="">Popularity</option>
+                            <option value="">Rating</option>
+                        </select>
+                    </div>
+                    <div class="col-4 ">
+                        
+                        <select name="" id="" >
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                        </select>        
+                    </div>
+                    <div class="col-4"><label for="">18 form 200</label></div>
+                
+            </div>
+        </div>
+        </div>
+        <div class="col-12 col-md-7">
+            <ul class="pagination mx-auto">
+                <li class="page-item"><a href="#" class="page-link">&lt;&lt;</a></li>
+                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">&gt;&gt;</a></li>
+            </ul>
+        </div>
+        </div>
+    </div><!-- navbar close -->
+
+    </div>
+</div>
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col-4 collapse " id="hide">
+            <div class="row container">
+                <button class="btn btn-outline-primary col-6">Reset</button>
+                <button class="btn btn-outline-primary col-6">Apply</button>
+                </div>
+                <div class="container border border-1">
+                <div class="form-check">
+                    <label for="new" class="form-label">New</label>
+                    <input type="checkbox" name="" id="new" class="form-check-input" checked>
+                </div>
+                <div class="form-check">
+                    <label for="sale" class="form-label">Sale</label>
+                    <input type="checkbox" name="" id="sale" class="form-check-input">
+                </div>
+            </div>
+                <div class="accordion">
+                    <div class="accordion-item border border-1">
+                        <div class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#one">OUTERWARE</button>
+                        </div>
+                        <div class="accordion-collapse collapse" id="one">
+                        <div class="accordion-body">
+                            <div class="form-check">
+                                <label for="windbreaker" class="form-label">windbreaker</label>
+                                <input type="checkbox" name="" id="windbreaker" class="form-check-input">
+                            </div>
+                            <div class="form-check">
+                                <label for="jumpsuit" class="form-label">jumpsuit</label>
+                                <input type="checkbox" name="" id="jumpsuit" class="form-check-input">
+                            </div>
+                            <div class="form-check">
+                                <label for="jacket" class="form-label">jacket</label>
+                                <input type="checkbox" name="" id="jacket" class="form-check-input">
+                            </div>
+                            <div class="form-check">
+                                <label for="coat" class="form-label">coat</label>
+                                <input type="checkbox" name="" id="coat" class="form-check-input">
+                            </div>
+                            <div class="form-check">
+                                <label for="raincoat" class="form-label">raincoat</label>
+                                <input type="checkbox" name="" id="raincoat" class="form-check-input">
+                            </div>
+                            <div class="form-check">
+                                <label for="handbag" class="form-label">handbag</label>
+                                <input type="checkbox" name="" id="handbag" class="form-check-input">
+                            </div>
+                            <div class="form-check">
+                                <label for="warmvest" class="form-label">warm vest</label>
+                                <input type="checkbox" name="" id="warmvest" class="form-check-input">
+                            </div>
+                            <div class="form-check">
+                                <label for="wallets" class="form-label">wallets</label>
+                                <input type="checkbox" name="" id="wallets" class="form-check-input">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item border border-1">
+                        <div class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#two">SEASON</button>
+                        </div>
+                        <div class="accordion-collapse collapse" id="two">
+                        <div class="accordion-body">
+                            <div class="form-check">
+                                <label for="spring" class="form-label">spring</label>
+                                <input type="checkbox" name="" id="spring" class="form-check-input">
+                            </div>
+                            <div class="form-check">
+                                <label for="summer" class="form-label">summer</label>
+                                <input type="checkbox" name="" id="summer" class="form-check-input">
+                            </div>
+                            <div class="form-check">
+                                <label for="autumn" class="form-label">autumn</label>
+                                <input type="checkbox" name="" id="autumn" class="form-check-input">
+                            </div>
+                            <div class="form-check">
+                                <label for="winter" class="form-label">winter</label>
+                                <input type="checkbox" name="" id="winter" class="form-check-input">
+                            </div>
+                            <div class="form-check">
+                                <label for="rainy" class="form-label">rainy</label>
+                                <input type="checkbox" name="" id="rainy" class="form-check-input">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item border border-1">
+                        <div class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#three">Price</button>
+                        </div>
+                        <div class="accordion-collapse collapse" id="three">
+                        <div class="accordion-body">
+                            <input type="range" name="" id="" class="form-range">
+                            <label for="" class="form-label float-start">0uah</label>
+                            <label for="" class="form-label float-end">10000uah</label>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item border border-1">
+                        <div class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#four">OUTERWARE</button>
+                        </div>
+                        <div class="accordion-collapse collapse" id="four">
+                        <div class="accordion-body">
+                            <span class="bg-secondary p-1">80</span>
+                            <span class="bg-secondary p-1">92</span>
+                            <span class="bg-secondary p-1">102</span>
+                            <span class="bg-secondary p-1">104</span>
+                            <span class="bg-secondary p-1">106</span>
+                            <span class="bg-secondary p-1">108</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body text-center h-100">
+                                <p class="card-title">Torn Jeans for Men</p>
+                                <img src="img/jeans1.png" alt="" class="card-img p-2 h-50 w-75">
+                                <p class="catd-text">Available Colors</p>
+                                <input type="radio" name="jeans" id="">
+                                <input type="radio" name="jeans" id="">
+                                <input type="radio" name="jeans" id="">
+                                <input type="radio" name="jeans" id="">
+                                <input type="radio" name="jeans" id="">
+                                <p class="card-text"><span class="text-muted">5500 uah</span> 4500 uah</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body text-center h-100">
+                                <p class="card-title">Nike Tshirts for Men</p>
+                                <img src="img/tshirt1.png" alt="" class="card-img p-2 h-50 w-75">
+                                <p class="catd-text">Available Colors</p>
+                                <input type="radio" name="tshirt" id="">
+                                <input type="radio" name="tshirt" id="">
+                                <input type="radio" name="tshirt" id="">
+                                <input type="radio" name="tshirt" id="">
+                                <input type="radio" name="tshirt" id="">
+                                <p class="card-text"><span class="text-muted">5500 uah</span> 4500 uah</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body text-center h-100">
+                                <p class="card-title">Casual Dress Belts for Men</p>
+                                <img src="img/belt1.png" alt="" class="card-img p-2 h-50 w-75">
+                                <p class="catd-text">Available Colors</p>
+                                <input type="radio" name="belt" id="">
+                                <input type="radio" name="belt" id="">
+                                <input type="radio" name="belt" id="">
+                                <input type="radio" name="belt" id="">
+                                <input type="radio" name="belt" id="">
+                                <p class="card-text">500 uah</p>
+                            </div>
+                        </div>
+                    </div><div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body text-center h-100">
+                                <p class="card-title">Torn Jeans for Men</p>
+                                <img src="img/womenshoe1.png" alt="" class="card-img p-2 h-50 w-75">
+                                <p class="catd-text">Available Colors</p>
+                                <input type="radio" name="wshoe" id="">
+                                <input type="radio" name="wshoe" id="">
+                                <input type="radio" name="wshoe" id="">
+                                <input type="radio" name="wshoe" id="">
+                                <input type="radio" name="wshoe" id="">
+                                <p class="card-text">1500 uah</p>
+                            </div>
+                        </div>
+                    </div><div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body text-center h-100">
+                                <p class="card-title">Torn Jeans for Men</p>
+                                <img src="img/menshoe1.png" alt="" class="card-img p-2 h-50 w-75">
+                                <p class="catd-text">Available Colors</p>
+                                <input type="radio" name="mshoe" id="">
+                                <input type="radio" name="mshoe" id="">
+                                <input type="radio" name="mshoe" id="">
+                                <input type="radio" name="mshoe" id="">
+                                <input type="radio" name="mshoe" id="">
+                                <p class="card-text">1200 uah</p>
+                            </div>
+                        </div>
+                    </div><div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body text-center h-100">
+                                <p class="card-title">Torn Jeans for Men</p>
+                                <img src="img/wallet1.png" alt="" class="card-img p-2 h-50 w-75">
+                                <p class="catd-text">Available Colors</p>
+                                <label for="wred" class="btn btn-secondary rounded-circle"><input type="radio" name="wallet" value="werd" id="wred"></label>
+                                <input type="radio" name="wallet" id="">
+                                <input type="radio" name="wallet" id="">
+                                <input type="radio" name="wallet" id="">
+                                <input type="radio" name="wallet" id="">
+                                <p class="card-text">900 uah</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    </body>
+</html>

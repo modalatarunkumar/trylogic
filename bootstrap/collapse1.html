@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <button data-bs-toggle="collapse" data-bs-target=".collapse1">Container 1</button>
+        <button data-bs-toggle="collapse" data-bs-target=".collapse2">Container 2</button>
+        <button data-bs-toggle="collapse" data-bs-target=".collapse3">Container 3</button>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-4 bg-primary collapse collapse1">Collapse 1</div>
+        <div class="col-4 bg-secondary collapse collapse2">Collapse 2</div>
+        <div class="col-4 bg-info collapse collapse3">Collapse 3</div>
+    </div>
+</div>
+<div class="container">
+    <button data-bs-toggle="collapse" data-bs-target="#collapse1">Container 1</button>
+    <button data-bs-toggle="collapse" data-bs-target="#collapse2">Container 2</button>
+    <button data-bs-toggle="collapse" data-bs-target="#collapse3">Container 3</button>
+</div>
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-4 bg-primary collapse" id="collapse1">Collapse 1</div>
+    <div class="col-4 bg-secondary collapse"id="collapse2">Collapse 2</div>
+    <div class="col-4 bg-info collapse"id="collapse3">Collapse 3</div>
+</div>
+<div class="container">
+    <a href="#collapse4" data-bs-toggle="collapse"  type="button">Container 1</a>
+    <a href="" data-bs-toggle="collapse" data-bs-target="#collapse5">Container 2</a>
+    <input type="button" value="Container 3" data-bs-toggle="collapse" data-bs-target="#collapse6"/>
+</div>
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-4 bg-primary collapse" id="collapse4">Collapse 1</div>
+    <div class="col-4 bg-secondary collapse" id="collapse5">Collapse 2</div>
+    <div class="col-4 bg-info collapse" id="collapse6">Collapse 3</div>
+</div>
+</body>
+</html>

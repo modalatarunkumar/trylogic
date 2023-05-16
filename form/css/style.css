@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    color:white;
+}
+.main{
+    height: 90vh;
+    width: 100%;
+    background: url("../img/comp.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-size: cover; */
+    /* background-color: green; */
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    height: 40%;
+    width: 40%;
+    position: relative;
+    left: 0px;top:0px;
+    background-color: black;
+    opacity: 0.8;
+}
+.loginform{
+    height: 40%;
+    width: 40%;
+    position: absolute;
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+h1{
+    text-align: center;
+}
+label{
+    /* justify-content: center; */
+    text-align: center;
+}
+input{
+    margin-top:1.5%;
+    padding:5px;
+
+}
+input[type="text"],input[type="password"]
+{
+    width: 80%;
+    color:green;
+}
+input[type="submit"]
+{
+    padding:5px 10px;
+    background:blue;
+    border: 0px solid transparent;
+    border-radius: 20px;
+}

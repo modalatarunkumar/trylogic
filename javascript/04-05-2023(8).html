@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n armstrong</title>
+</head>
+<body>
+    <script>
+        // var n=parseInt(prompt('Enter a number'));
+        var n=123456;
+        for(let i=100;i<=n;i++){
+            let sum=0,temp=i,rem,len;
+            for(len=0;temp>0;len++){temp=Math.floor(temp/10);}
+            temp=i;
+            while(temp>0){
+                rem=temp%10;
+                sum+=rem**len;
+                temp=Math.floor(temp/10);
+            }
+            if(i==sum){
+                document.write(`${i} is armstrong<br>`);
+            }
+            // else{
+            //     document.write(`${i} is not armstrong<br>`);
+            // }
+
+        }
+    </script>
+</body>
+</html>

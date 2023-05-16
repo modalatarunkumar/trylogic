@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+        <div class="modal" id="login">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- <div class="modal-header">
+                        
+                    </div> -->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6"><button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#lgn">Login</button></div>
+                            <div class="col-6"><button class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#rgst">Register</button></div>
+                        </div>
+                        <div id="lgn" class="collapse">
+                            <input type="text" placeholder="Enter name">
+                        </div>
+                        <div id="rgst" class="collapse">
+                            <input type="text" placeholder="Enter Email">
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger rounded-pill" data-bs-dismiss="modal">Cancel</button>
+                        <button class="btn btn-success rounded-pill">Ok</button>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

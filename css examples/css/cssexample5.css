@@ -1,0 +1,11 @@
+.main{
+    height:800px;
+    width: 100%;
+    background-color: lightblue;float:left;
+}
+.main .sub1{
+    width:25%;
+    height: 90%;
+    background: blue;
+    margin:5%; 
+}

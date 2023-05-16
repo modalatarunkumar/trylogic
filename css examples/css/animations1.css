@@ -1,0 +1,77 @@
+.main{
+    height:400px;width:400px;background: aqua;
+    margin:5%;float:left;
+
+}
+.sub1{
+    height: 150px;width: 150px;
+    background: green;position: relative;
+    animation:try1 1s infinite alternate;
+}
+@keyframes try1{
+0%{left:0px;top:0px}
+100%{left:250px;top:250px}
+}
+.sub2{
+    height: 150px;width: 150px;
+    background: green;position: relative;
+    animation:try1 1s infinite alternate-reverse;
+}
+.sub3{
+    height: 150px;width: 150px;
+    background: green;position: relative;
+    animation:try2 1s infinite alternate;
+}
+@keyframes try2{
+0%{left:250px;top:0px}
+100%{left:0px;top:250px}
+}
+.sub4{
+    height: 150px;width: 150px;
+    background: green;position: relative;
+    animation:try2 1s infinite alternate-reverse;
+}
+/*@keyframes try4{
+0%{left:0px;top:250px}
+100%{left:250px;top:0px}
+}
+*/
+.sub5{
+    height: 150px;width: 150px;
+    background: green;position: relative;
+    animation:try3 1s infinite normal;
+}
+@keyframes try3{
+0%{left:0px;top:0px}
+25%{left:250px;top:0px;}
+50%{left:250px;top:250px;}
+75%{left:0px;top:250px;}
+100%{left:0px;top:0px}
+}
+.sub6{
+    height: 150px;width: 150px;
+    background: green;position: relative;
+    animation:try3 1s infinite reverse;
+}
+.sub7{
+    height:100px;width:100px;border-top:5px solid red;
+    position:relative;
+    animation: try4 10s infinite normal;
+}
+@keyframes try4 {
+    0%{left:50px;top:50px;transform:rotate(0deg)}
+    25%{left:250px;top:50px;transform:rotate(90deg)}
+    50%{left:250px;top:250px;transform:rotate(180deg)}
+    75%{left:50px;top:250px;transform:rotate(270deg)}
+    100%{left:50px;top:50px;transform:(rotate(360deg))}
+}
+.sub8{
+    height:100px;width:100px;border-top:5px solid red;
+    border-radius:50%;
+    margin:10%;
+    animation:try5 1s infinite normal;
+}
+@keyframes try5 {
+    from{transform:rotate(0deg)}
+    to{transform:rotate(360deg)}
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>loop</title>
+</head>
+<body>
+	<script>
+		var a;
+		for (var i = 0; i < 3; i++) {
+			a=prompt('Enter a number');
+			if (a<0||a>100) {
+				alert('invalid');
+				if(i==2)
+				alert('Too many wrong attempts');
+			}
+			else{
+				if(a>=90&&a<=100){
+					document.write('A++');
+				}
+				else if(a>=80&&a<90){
+					document.write('A+');
+				}
+				else if(a>=70&&a<80){
+					document.write("A");
+				}
+				else if(a>=60&&a<70){
+					document.write('B');
+				}
+				else if(a>=50&&a<60){
+					document.write('C');
+				}
+				else if(a>=37&&a<50){
+					document.write('D');
+				}
+				else{
+					document.write('F');
+				}
+				break;
+			}
+		}
+			</script>
+</body>

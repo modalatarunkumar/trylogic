@@ -1,0 +1,46 @@
+.header{
+    width:100%;
+    height: 150px;
+    float: left;
+    background-color: red;
+    border-radius: 25px;
+}
+h1{
+    color:white;
+}
+.main{
+    width: 100%;
+    height: 650px;
+    float: left;
+}
+.sidebar1{
+    width:20%;
+    height: 98%;
+    background-color: green;
+    float: left;
+    border-radius: 25px;
+    margin-top: 0.5%;
+}
+.sub{
+    width: 58%;
+    height: 98%;
+    background-color: yellow;
+    float: left;
+    margin: 0.5%;
+    border-radius: 25px;
+}
+.sidebar2{
+    width:20%;
+    height: 98%;
+    background-color: pink;
+    float: left;
+    border-radius: 25px;
+    margin-top: 0.5%;
+}
+.footer{
+    height:150px;
+    width: 100%;
+    background-color: darkblue;
+    float:left;
+    border-radius: 25px;
+}

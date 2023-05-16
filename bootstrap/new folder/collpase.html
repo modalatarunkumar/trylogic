@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container my-2">
+        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapse1">
+            Collapse 1
+        </button>
+        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target=".collapse2">
+            Collapse 2
+        </button>
+        <a href="#collapse3" class="btn btn-primary" data-bs-toggle="collapse">
+            Collapse 3
+        </a>
+        <a href=".collapse4" class="btn btn-primary" data-bs-toggle="collapse">
+            Collapse 4
+        </a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-4 bg-success collapse" id="collapse1">Container1</div>
+            <div class="col-12 col-sm-4 bg-primary collapse collapse2">Container2</div>
+            <div class="col-12 col-sm-4 bg-warning collapse" id="collapse3">Container3</div>
+            <div class="col-12 col-sm-4 bg-secondary collapse collapse4" >Container4</div>
+        </div>
+    </div>
+</body>
+</html>

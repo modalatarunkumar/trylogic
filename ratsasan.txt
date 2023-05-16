@@ -1,0 +1,11 @@
+C5 _ B4 _ C5 G4 G#4 B4
+C5 _ B4 _ C5 F4 G#4 B4
+C5 _ B4 _ C5 G4 G#4 B4
+C5 _ B4 _ C5 F4 G#4 B4 __ C5
+
+C5 _ C5 C#5 D#5 _ F5 D#5 C#5 D#5 C5 C#5
+D#5 C#5 C5 C#5 B4 C5 __ C5 B4 G4
+
+C4 _ C4 C#4 D#4 _ _ F4 D#4 C#4 D#4 C4 C#4
+
+D#4 C#4 C4 C#4 B3 C4 _ C4 B3 G3

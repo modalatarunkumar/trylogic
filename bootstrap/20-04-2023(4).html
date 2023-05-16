@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool tip</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+<body>
+    <div class="container m-5">
+        <p class="show" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="abc">some text</p>
+    </div>
+    <div class="container m-5">
+
+        <a href="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="abc">some text</a>
+    </div>
+    <div class="container m-5">
+        <button class="btn btn-primary show" data-bs-placement="top" data-bs-toggle="tooltip" data-bs-title="top tooltip">tooltop</button>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+
+</body>
+</html>

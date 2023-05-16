@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const myfun = () =>{
+            document.write("abc");
+            return "<br>new";
+        }
+        document.write(myfun());
+        const person={firstname:"JONH",
+        secondname:"welcome",
+        fullname:function(){
+            return this.firstname+"   "+this.secondname;
+        }
+    }
+        document.write("<br>",person.firstname,"<br>",person.secondname);
+        document.write("<br>"+person.fullname());
+    </script>
+</body>
+</html>

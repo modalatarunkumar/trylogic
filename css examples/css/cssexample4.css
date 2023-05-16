@@ -1,0 +1,24 @@
+body div{
+    width:95%;
+    height:450px;
+    border:5px solid black;
+    margin:20px;
+    
+}
+
+h1{
+    color:pink;
+    border-bottom: 15px dotted pink;
+}
+a{
+    color:orange;
+}
+h3{
+    color: gray;
+}
+ul{
+    border:5px solid rgb(153, 0, 255);
+    margin:0px 20px;
+    background-color: gray;
+    padding:20px 35px;
+}

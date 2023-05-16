@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll spy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        .container>div.tab-pane{
+            height:180vh;
+        }
+    </style>
+</head>
+<body data-bs-target="#main" data-bs-spy="scroll">
+<div class="container">
+    <ul class="nav nav-pills position-fixed top-0" id="main">
+        <li class="nav-item"><a href="" class="nav-link active" data-bs-toggle="pill" data-bs-target="#home">Home</a></li>
+        <li class="nav-item"><a href="" class="nav-link" data-bs-toggle="pill" data-bs-target="#about">About</a></li>
+        <li class="nav-item"><a href="" class="nav-link" data-bs-toggle="pill" data-bs-target="#contact">Contact</a></li>
+    </ul>
+    <div class="container">
+        <div class="tab-pane bg-danger" id="home">This is home page</div>
+        <div class="tab-pane bg-info" id="about">This is about page</div>
+        <div class="tab-pane bg-secondary" id="contact">This is contact page</div>
+    </div>
+</div>
+</body>
+</html>

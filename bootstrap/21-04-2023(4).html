@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <style>
+        span{
+            display: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding:5px;
+            border-radius: 2px;
+            position: relative;
+            left: 20px;
+            z-index: 12;
+        }
+        span::before{
+            content:'';
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 25%;left: -10%;
+            /* background: red; */
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 10px;width: 10px;display: inline-block;
+            transform:rotate(45deg);
+            z-index: -8;
+            /* overflow: hidden; */
+        }
+        p{
+            margin-top: 15px;
+            padding: 5px;
+        }
+        p:hover span{display:inline-block;}
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is paragraph <span>This</span></p>
+    </div>
+    <!-- <span></span> -->
+</body>
+</html>

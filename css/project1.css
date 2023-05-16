@@ -1,0 +1,99 @@
+ .one{
+width:100%;
+height:300px;
+background:lightblue;
+float:left;
+}
+.one .onel{
+width:40%;
+height:100%;
+float:left;
+}
+.one .oner{
+width:60%;
+height:100%;
+float:left;
+}
+.one .onel img{
+width:98%;
+height:80%;
+margin-top:3%;
+margin-left:2%;
+}
+.one .oner ul li{
+float:left;
+list-style:none;
+margin-left:30px;
+margin-top:10%;
+}
+.one .oner ul li a{
+text-decoration:none;
+color:black;
+}
+.two{
+width:100%;
+height:400px;
+float:left;
+margin-bottom:100px;
+}
+.two img{
+height:80%;
+width:95%;
+margin-top:2%;
+}
+.two h3{
+font-size:30px;
+}
+.three{
+height:400px;
+width:100%;
+float:left;
+background:lightblue;
+margin-bottom:20px;
+}
+.three .threel{
+height:100%;
+width:49.50%;
+float:left;
+margin-left:0.5%;
+
+}
+.three .threer{
+height:100%;
+width:50%;
+float:left;
+}
+.three .threer img{
+height:98%;
+width:98%;
+}
+.three .threel{
+font-size:30px;
+}
+.three .threel h1{
+text-decoration:dotted underline;
+}
+.four{
+height:1000px;
+width:100%;
+float:left;
+background:green;
+margin-top:30px;
+color:white;
+}
+.four .a{
+margin-left: 10%;
+width:20%;
+background:grey;/*this is comment */
+height:37%;
+margin-top:5%;
+float:left;
+}
+.four .a img{
+width:98%;
+height:50%;border-radius:5%;
+margin:0.5%;
+}
+.four .a h1,p{
+margin-left:0.5%;
+}

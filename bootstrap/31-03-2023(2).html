@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        #md2 .modal-content{
+            background: url('img/image.png');
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#md">Click me</button>
+        <div class="modal" id="md">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p>Register</p><button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" placeholder="Username" class="w-100">
+                        <input type="password" placeholder="Password" class="w-100">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger rounded-pill" data-bs-dismiss="modal">Cancel</button>
+                        <button class="btn btn-success rounded-pill">Ok</button>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="container">
+        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#md1">Click me</button>
+        <div class="modal" id="md1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                        <p>Register</p><button class="btn-close" data-bs-dismiss="modal"></button>
+                        <input type="text" placeholder="Username" class="w-100">
+                        <input type="password" placeholder="Password" class="w-100">
+                        <button class="btn btn-danger rounded-pill" data-bs-dismiss="modal">Cancel</button>
+                        <button class="btn btn-success rounded-pill">Ok</button>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <!-- Div background -->
+    <body>
+        <div class="container">
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#md2">Click me</button>
+            <div class="modal" id="md2">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <p>Register</p><button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" placeholder="Username" class="w-100">
+                            <input type="password" placeholder="Password" class="w-100">
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger rounded-pill" data-bs-dismiss="modal">Cancel</button>
+                            <button class="btn btn-success rounded-pill">Ok</button>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    
+</body>
+</html>

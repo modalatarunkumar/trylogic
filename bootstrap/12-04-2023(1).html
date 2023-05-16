@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        input{
+            margin: 2.5vh 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="my-3 row">
+            <label for="abc" class="form-label col-6">Username:</label>
+            <input type="text" name="abc" id="abc" class="form-control col-6 w-50">
+        </div>
+        <div class="my-3 row">
+            <label for="adress" class="form-label col-6">Address</label>
+            <textarea name="adress" id="adress" cols="" rows="" class="form-control col-6 w-50"></textarea>
+        </div>
+        <div class="my-3 row">
+            <label for="state" class="form-label col-6">Select state:</label>
+            <select name="state" id="state" class="form-select col-6 w-50">
+                <option value="ap">ap</option>
+                <option value="ts">ts</option>
+                <option value="ka">ka</option>
+                <option value="ke">ke</option>
+            </select>
+        </div>
+        <div class="my-3 form-check form-switch">
+            <label for="this" class="form-label">This</label>
+            <input type="checkbox" name="" id="this" class="form-check-input">
+        </div>
+        <div class="row mt-3">
+        <div class="col-6 form-check form-switch">
+            <label for="male" class="form-label">male</label>
+            <input type="radio" name="gender"  value="male" id="male" class="form-check-input">
+        </div>
+        <div class="col-6 form-check form-switch">
+            <label for="female" class="form-label">female</label>
+            <input type="radio" name="gender" value="female" id="female" class="form-check-input">
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="form-check form-switch col-3">
+            <label for="" class="form-labe">normal</label>
+            <input type="checkbox" name="" id="" class="form-check-input">
+        </div>
+        <div class="form-check form-switch col-3">
+            <label for="" class="form-label">disabled</label>
+            <input type="checkbox" name="" id="" class="form-check-input" disabled>
+        </div>
+        <div class="form-check form-switch col-3">
+            <label for="" class="form-label">active</label>
+            <input type="checkbox" name="" id="" class="form-check-input" checked>
+        </div>
+        <div class="form-switch form-check col-3">
+            <label for="" class="form-label">active disabled</label>
+            <input type="checkbox" name="" id="" class="form-check-input" checked disabled>
+        </div>
+    </div>    
+    </div>
+</body>
+</html>

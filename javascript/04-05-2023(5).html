@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="number">Enter a number:</label>
+        <input type="number" name="" id="number">
+    </div>
+    <button onclick="func()">Click me</button>
+    <div>
+        <label for="result">Sum of individuals:</label>
+        <input type="number" name="" id="result">
+    </div>
+    <script>
+        function func(){
+            var num=parseInt(document.getElementById('number').value);
+
+            var sum=0,rem;
+            while(num>0){
+                rem=num%10;
+                sum+=rem;
+                num=Math.floor(num/10);
+            }
+            document.getElementById("result").value=sum;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* @media screen and (width>844px){
+    .header{
+        height:50px;
+    }    
+}
+@media screen and (width<845px){
+    .header{
+        height:200px;
+    }    
+} */
+.navbar-nav li a{
+    text-transform: uppercase;
+}

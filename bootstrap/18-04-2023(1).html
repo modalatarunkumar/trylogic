@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        .container div{
+            height: 50px;
+            width: 50px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="text-start text-md-center">This is starting text</p>
+        <p class="text-center">This is center text</p>
+        <p class="text-end">This is right text</p>
+    </div>
+    <div class="container">
+        <button class="btn btn-primary position-relative px-4 py-2">
+            click<span class="badge bg-danger px-1 py-1 position-absolute top-0 start-100 translate-middle">50+</span>
+        </button>
+    </div>
+    <div class="container bg-secondary position-relative" style="height: 400px;">
+        <div class="position-absolute start-0 top-0"></div>
+        <div class="position-absolute top-0 end-0"></div>
+        <div class="position-absolute bottom-0 start-0"></div>
+        <div class="position-absolute top-50 start-50"></div>
+        <div class="position-absolute bottom-50 end-50"></div>
+        <div class="position-absolute bottom-0 end-0"></div>
+    </div>
+</body>
+</html>

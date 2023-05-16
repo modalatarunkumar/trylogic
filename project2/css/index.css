@@ -1,0 +1,78 @@
+.main1{
+    background: url('../../img/ai.jpg');
+    width:100%;
+    height:400px;
+    background-size: cover;
+
+}
+.main1 h1{
+    color:yellow;
+    margin-left: 30px;
+    padding-top: 50px;
+}
+.main1 p,.main3 p{
+    margin-left: 30px;
+}
+.main1 button{
+    color:white;
+    background: yellow;
+    padding:20px;
+    margin-left: 30px;
+    border-radius: 40px;
+}
+body{
+    background-color: black;
+}
+
+
+*{color:white;}
+.main2{
+    width:100%;
+    height:400px;
+    background-color: green;
+}
+.main2 .sub1{
+    width:30%;
+    margin:2% 1.5% 0% 1.5%;
+    height:90%;
+    float: left;
+    background:url('../../img/profile1.jpg');
+    background-size: cover;
+}
+.main2 .sub2{
+    width:30%;
+    margin:2% 1.5% 0% 1.5%;
+    height:90%;
+    float: left;
+    background:url('../../img/profile2.jpg');
+    background-size: cover;
+}
+.main2 .sub3{
+    width:30%;
+    margin:2% 1.5% 0% 1.5%;
+    height:90%;
+    float: left;
+    background:url('../../img/profile3.jpg');
+    background-size: cover;
+}
+
+.main3{
+    background: yellow;width:100%;
+    height:100px;
+}
+.main3 .sub1{
+    height:100%;
+    width:60%;
+    float:left;
+}
+.main3 .sub2{
+    height: 100%;
+    width: 40%;
+    float:left;
+}
+.main3 .sub2 button{
+border-radius: 30px;
+background: black;
+padding:20px;
+margin-top: 2%;
+}

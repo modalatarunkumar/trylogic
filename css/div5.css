@@ -1,0 +1,35 @@
+.main
+{
+width:70%;
+background:aqua;
+height:1000px;
+float:left;
+margin-left:15%;
+}
+.main .a{
+width:35%;
+float:left;
+margin-left:10%;
+background:white;
+height:20%;
+margin-bottom:2%;
+}
+.main .b{
+width:35%;
+float:left;
+margin-left:10%;
+background:white;
+height:20%;
+margin-bottom:2%;
+}
+img{
+height:48%;
+width:98%;
+margin-left:1%;
+margin-top:1%;
+border-radius:5%;
+}
+body
+{
+background-image:url("img/comp.jpg");
+}
