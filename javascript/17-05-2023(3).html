@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+    <style>
+        div{
+            float:left;
+            margin:15px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var n=5;
+        document.write('<div>');
+        for(let i=0;i<n;i++){
+            for(let j=0;j<n;j++){
+                document.write(String.fromCharCode(j+65)+'&nbsp;');
+            }
+            document.write('<br>');
+        }
+        document.write("</div><div>");
+        for(let i=0;i<n;i++){
+            for(let j=0;j<n;j++){
+                document.write(String.fromCharCode(i+65)+'&nbsp;');
+            }
+            document.write("<BR>");
+        }
+        document.write('</div><div>');
+        for(let i=0;i<n;i++){
+            for(let j=0;j<=i;j++){
+                document.write(String.fromCharCode(i+65)+"&nbsp;");
+            }
+            document.write('<br>');
+        }
+        document.write("</div><div>");
+        for(let i=0;i<n;i++){
+            for(let j=n;j>=i;j--)
+            document.write('&nbsp;');
+            for(let k=0;k<=i;k++)
+            document.write("*");
+            document.write("<br>");
+        }
+        document.write("</div><div>");
+        for(let i=0;i<n;i++){
+            for(let j=0;j<n;j++){
+                if(i==0||i==n-1||j==0||j==n-1){
+                    document.write("*");
+                }
+                else{
+                    document.write("&nbsp;&nbsp;");
+                }
+                
+            }
+            document.write("<BR>");
+        }
+    </script>
+</body>
+</html>
