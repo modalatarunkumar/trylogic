@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            
+            float: left;
+            list-style:none;
+            padding:5px;
+            margin:5px;
+            background:green;
+            color:white;
+        }
+        .dropdown{position:relative;}
+        .dropdown ul{position: absolute;
+            /* left:0; */
+        }
+        .child{
+            display:none;
+            left:0
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+            <li class="dropdown" type="button" onclick="myfun()">services
+                <ul>
+                    <li class="child">srvc 1</li>
+                    <li class="child">srvc 2</li>
+                    <li class="child">srvc 3</li>
+                    <li class="child">srvc 4</li>
+                </ul>
+            </li>
+            <li>login</li>
+        </ul>
+    </div> 
+    <script>
+        function myfun(){
+            var k=document.getElementsByClassName('child');
+            for(let i=0;i<k.length;i++){
+                k[i].style.display="block";
+            }
+        }
+    </script>   
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");-->
+    <style>
+        li{
+            float:left;
+            padding:10px;
+            margin:10px;
+            list-style:none;
+        }
+        i{
+            transition: 10s;
+        }
+        li{
+            transition: 10s;
+        }
+        li:hover + i{
+            transform:rotate(180deg);
+            transition:5s;
+        }
+        p:hover + b{
+            transform: rotate(180deg);
+            transition: 5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li onmouseover="myfun(this)" onmouseout="myfun1(this)">home<i onmouseover="rev(this)" onmouseout="rev1(this)" class="bi bi-chevron-up"></i></li>
+            <li onmouseover="myfun(this)" onmouseout="myfun1(this)">about<i onmouseover="rev(this)" onmouseout="rev1(this)" class="bi bi-chevron-up"></i></li>
+            <li onmouseover="myfun(this)" onmouseout="myfun1(this)">contact<i onmouseover="rev(this)" onmouseout="rev1(this)" class="bi bi-chevron-up"></i></li>
+            <li onmouseover="myfun(this)" onmouseout="myfun1(this)">services<i onmouseover="rev(this)" onmouseout="rev1(this)" class="bi bi-chevron-up"></i></li>
+            <li onmouseover="myfun(this)" onmouseout="myfun1(this)">login<i onmouseover="rev(this)" onmouseout="rev1(this)" class="bi bi-chevron-up"></i></li>
+        </ul>
+    </div>
+    <p>THis is <b>hi</b>some text</p>
+    <script>
+        function myfun1(tag){
+            tag.style.color='black';
+            
+        }
+        function myfun(tag){
+            tag.style.color='red';
+            
+        }
+        function rev1(tag){
+            tag.classList.replace('bi-chevron-down','bi-chevron-up');
+        }
+        function rev(tag){
+            tag.classList.replace('bi-chevron-up','bi-chevron-down');
+        }
+    </script>
+</body>
+</html>
