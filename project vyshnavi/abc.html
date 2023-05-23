@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .cont{
+            background-color: green;
+            height: 200px;
+            /* margin-top: 50px; */
+            width:200px;
+            position: relative;z-index: 1;
+            /* top:0px; */
+        }
+        .txt{
+            background: black;
+            width: 200px;
+            height: 200px;
+            color:white;
+            opacity: 0.6;
+            text-align: center;
+            position: absolute;
+            top:200px;z-index: 2;
+        }
+        .container{height:200px;overflow: hidden;}
+        .cont:hover + .txt{top:25px;transition:0.5s;}
+    </style>
+</head>
+<body>
+    <!-- <p class="a">sjdlitjewiolljldsailfjewkdslfjlkdslfjdsijfiejknfsldj</p> -->
+    <div class="container bg-primary">
+        <div class="cont">
+        </div>
+        <div class="txt">
+            <h1>Heading</h1>
+        </div>
+
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
