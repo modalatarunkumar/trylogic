@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        li.nav-item:hover a.nav-link{
+            border-bottom:2px solid blue;
+        }
+        
+        .navbar-brand,.navbar-collapse{
+            background: rgba(170, 231, 170, 0.7);
+            }
+        .navbar-brand,.navbar-collapse{margin:0px;}
+        
+        body{
+            background: url('img/browser.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .navbar-nav a{
+            color:white !important;
+            
+        }
+        .navbar-nav a:hover{
+            color:red !important;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container-fluid">
+    <div class="container">
+        <div class="navbar navbar-expand-md">
+            <a href="#" class="navbar-brand">Navigation</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+            <div class="navbar-collapse collapse" id="menu">
+                <ul class="navbar-nav ms-auto pe-2">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Clients</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Carriers</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

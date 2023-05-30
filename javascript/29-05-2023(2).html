@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str='';
+        var num=5;
+        str+="<div>";
+        for(let i=0;i<num;i++){
+            
+            for(let j=0;j<=i;j++)
+            str+=j;
+            str+='<br>';
+            
+        }
+        str+="</div>";
+        str='';
+        str+="<div>";
+        var count=1;
+        for(let i=0;i<num;i++){
+            for(let j=0;j<=i;j++){
+                str+=count;
+                count+=2;
+            }
+            str+='<br>';
+            
+        }
+        str+="</div>";
+        document.write(str);
+
+    </script>
+</body>
+</html>

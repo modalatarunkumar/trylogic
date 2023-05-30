@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" name="reg">
+            <table>
+                <tr>
+                    <td><label for="fname">First Name:</label></td>
+                    <td><input type="text" name="fname" id="fname"></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last Name:</label></td>
+                    <td><input type="text" name="lname" id="lname"></td>
+                </tr>
+                <tr>
+                    <td><label for="uname">User Name:</label></td>
+                    <td><input type="text" name="uname" id="uname"></td>
+                </tr>
+                <tr>
+                    <td><label for="phno">Phone number:</label></td>
+                    <td><input type="number" name="phno" id="phno"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender:</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male"><label for="male">male</label>
+                        <input type="radio" name="gender" id="female" value="female"><label for="female">female</label>
+                        <input type="radio" name="gender" id="others" value="others"><label for="others">others</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of birth:</label></td>
+                    <td><input type="date" name="dob" id="dob"></td>
+                </tr>
+                <tr>
+                    <td><label for="state">Select State:</label></td>
+                    <td><select name="state" id="state">
+                        <option value="">-- Choose Your State --</option>
+                        <option value="Andhra pradesh">Andhra pradesh</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tamilnadu">Tamilnadu</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="desc">Enter Address</label></td>
+                    <td><textarea name="desc" id="desc" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="color">Favourite Color:</label></td>
+                    <td><input type="color" name="color" id="color"></td>
+                </tr>
+                <tr>
+                    <td><input type="reset" value="Clear"></td>
+                    <td><input type="button" value="Submit" onclick="myfun()"></td>
+                </tr>
+            </table>
+            
+        </form>
+    </div>
+    <p id="res"></p>
+    <script>
+        var str='';
+        function myfun(){
+            var fn=document.getElementById('fname').value;
+            var ln=document.getElementById('lname').value;
+            var un=document.getElementById('uname').value;
+            var gen=document.forms.reg.gender.value;
+            var ph=document.getElementById('phno').value;
+            var description=document.getElementById('desc').value;
+            var state=document.forms.reg.state.value;
+            var dob=document.getElementById("dob").value;
+            // nmchck(fn,"first name");
+            // nmchck(ln,"last name");
+            // nmchck(un,"User name");
+            // nmchck(ph,"Phone number");
+            // genchck(gen);
+            // statechck(state);
+            // str+="<br>Favourite Color: "+document.getElementById('color').value;
+            // nmchck(description,"Address");
+            nmchck(dob,"Date of Birth");
+            
+            document.getElementById('res').innerHTML=str;
+        }
+        function nmchck(one,two){
+            if(one==""||one==null)
+            window.alert("invalid "+two);
+            else
+            str+="<br>"+two+": "+one;
+        }
+        function genchck(gender){
+            if(gender!="male"&&gender!="female"&&gender!="others")
+            window.alert("please select Gender");
+            else{
+                str+="<br>Gender: "+gender;
+            }
+        }
+        function statechck(state){
+            if(state=="")
+            window.alert("Please select state");
+            else{
+                str+="<br>State: "+state;
+            }
+        }
+    </script>
+</body>
+</html>

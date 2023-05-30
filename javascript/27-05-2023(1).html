@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var k=document.getElementsByClassName('rightAns')
+        var l=Array();
+        marks=0;
+        for(let i=0;i<k.length;i++){
+            l[i]=parseInt(k[i].textContent)
+        }
+        
+        var m=document.getElementsByClassName('menu-tbl');
+        var b=Array();
+        for(let i=0;i<m.length;i++){
+            b[i]=parseInt(m[i].lastChild.lastChild.lastChild.textContent)
+            // b[i]=parseInt(m[i].textContent[m[i].textContent.length-1])
+        }
+        for(let i=0;i<m.length&&i<k.length;i++){
+            if(l[i]==b[i])
+            marks++;
+
+        }
+        console.log(marks);
+    </script>
+</body>
+</html>

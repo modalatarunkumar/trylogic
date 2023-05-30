@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <form action="" name="reg">
+        <table >
+            <tr>
+                <td><label for="fname">Firstname:</label></td>
+                <td><input type="text" name="fname" id="fname"></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Lastname:</label></td>
+                <td><input type="text" name="lname" id="lname"></td>
+            </tr>
+            <tr>
+                <td><label for="uname">Username:</label></td>
+                <td><input type="text" name="uname" id="uname"></td>
+            </tr>
+            <tr>
+                <td><label for="pwd">Password:</label></td>
+                <td><input type="password" name="pwd" id="pwd"></td>
+            </tr>
+            <tr>
+                <td><label for="pwd1">Check Password:</label></td>
+                <td><input type="password" name="pwd1" id="pwd1"></td>
+            </tr>
+            <tr>
+                <td><label for="">Gender:</label></td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+                    <input type="radio" name="gender" id="others" value="others"><label for="others">Others</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="confirm" id="confirm" onclick="chck()"><label for="confirm">Click me</label></td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Clear"></td>
+                <td><input type="submit" value="Ok" onclick="myfun()" id="submit"disabled></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+    <div id="abcd"></div>
+</body>
+<script>
+
+    function chck(){
+        var check=document.getElementById('confirm');
+        if(check.checked){
+            //  document.getElementById('abcd').innerHTML='true';
+             document.getElementById("submit").disabled=false;
+        }
+        else{
+            // document.getElementById('abcd').innerHTML='';
+            document.getElementById("submit").disabled=true;
+        }
+    }
+    function myfun() {
+        var fn=document.getElementById('fname').value;
+        var ln=document.getElementById('lname').value;
+        var un=document.getElementById('uname').value;
+        var pass=document.getElementById('pwd').value;
+        var pass1=document.getElementById('pwd1').value;
+        // name("First",fn);
+        // name("Last",ln);
+        // name("User",un);
+        //pwdchck(pass,pass1);
+        var gen=document.forms.reg.gender.value;
+        genchck(gen);
+        // genderchck();
+    }
+    function genderchck(){
+        var male=document.getElementById('male');
+        var female=document.getElementById('female')
+        var others=document.getElementById("others")
+        if(male.checked)
+            window.alert("male")
+        else if(female.checked)
+            window.alert("female")
+        else if(others.checked)
+            window.alert("others")
+        else
+            window.alert("Please enter your gender")
+    }
+    
+    function name(str1,str){
+        if(str==null||str=="")
+        window.alert(`${str1} name has no characters`);
+        else if(str.length<3)
+        window.alert(`${str1} name should have 3 letters`);
+        else
+        document.write(str1+" name is valid<br>");
+    }
+    function pwdchck(pass,pass1){
+        if(pass==""|| pass==null)
+        window.alert("no password entered");
+        else if(pass.length<8)
+        window.alert("password must be 8 characters");
+        else if(pass==pass1)
+        document.write("Password is ok")
+        else
+        alert("password not ok")
+    }
+    function genchck(gen){
+        if(gen=="male")
+            window.alert("Male")
+        else if(gen=="female")
+            window.alert("female");
+        else if(gen=="others")
+            window.alert("others");
+        else
+            window.alert("please select gender");
+    }
+</script>
+</html>

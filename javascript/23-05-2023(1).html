@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- creating objects -->
+    <script>
+        //first method
+        emp={
+            name:'kumar',
+            number:12345,
+            salary:1500,
+            location:'hyd'
+        }
+        document.write(emp.name+" &nbsp; "+emp.location+" &nbsp; "+emp.salary);
+        //second method
+        var student=new Object();
+        student.name='abc';
+        student.number=432;
+        student.group='mpc';
+        document.write("<br>"+student.number+" &nbsp; "+student.name);
+        function fun(name,number,syllabus){
+            this.name=name;
+            this.number=number;
+            this.syllabus=syllabus;
+        }
+        var n=new fun('naveen',12345,'maths');
+        document.write("<br>"+n.name+" &nbsp; "+n.syllabus+" &nbsp; "+n.number);
+    </script>
+</body>
+</html>

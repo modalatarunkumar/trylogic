@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        :root{
+            --bg: rgb(56, 61, 56);
+
+        }
+        i{
+            padding: 0.5em;
+            font-size: 2em;
+        }
+        .card{
+            box-shadow: 0 0 1px var(--bg),
+            0 0 3px var(--bg),
+            0 0 6px var(--bg),
+            0 0 9px var(--bg),
+            0 0 10px var(--bg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-fluid b g-success">
+            <div class="navbar navbar-expand-md">
+                <a href="#" class="navbar-brand">Login</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+                <div id="menu" class="navbar-collapse collapse">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#login" class="nav-link">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login form -->
+    <div id="login" class="container justify-content-center">
+        <div class="card col-6 text-center mx-auto">
+        <h2>Login</h2>
+        <div class="row">
+            <div class="col-5 my-2">
+                <label for="uname" class="form-label">Username:</label>
+            </div>
+            <div class="col-5 my-2">
+                <input type="text" name="" id="uname" class="form-control">
+            </div>
+            <div class="col-5 my-2">
+                <label for="pwd" class="form-label">Password:</label>
+
+            </div>
+            <div class="col-5 my-2">
+                <input type="password" name="" id="pwd" class="form-control">
+            </div>
+        </div>
+        <div class="col-12 my-2">
+            <input type="checkbox" name="" id="confrm" class="form-check-input mx-auto" onclick="myfun()">
+            <label for="confrm">Click me</label>
+            </div>
+            <div class="col-12 my-2">
+            <input type="button" value="Submit" class="btn btn-primary" id="submit" disabled>
+        </div>
+    </div>
+</div>
+<!-- footer section -->
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h2>Address:</h2>
+            <p>5-55, jojinagar, <br>one town<br>Vijayawada AP - 513432</p>
+        </div>
+        <div class="col-12 col-sm-6">
+            <h2>Social Media</h2>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-linkedin"></i>
+        </div>
+    </div>
+</div>
+<script>
+    function myfun(){
+        var res=document.getElementById('confrm');
+        if(res.checked){
+            document.getElementById('submit').disabled=false;
+        }
+        else{
+            document.getElementById('submit').disabled=true;
+        }
+
+    }
+</script>
+
+    <script src="javascript/bootstrap.bundle.min.js"></script>    
+</body>
+</html>

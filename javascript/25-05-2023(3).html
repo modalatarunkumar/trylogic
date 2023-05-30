@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Student registration Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        #text-rq,
+        #mn,
+        #db,
+        #gn {
+            color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mail">
+            <h2>Student Registration Form</h2>
+            <form class="form-horizontal" name="form1" action="#" method="post">
+                <div class="form-group">
+                    <label class="control-label col-sm-2">User name:</label>
+                    <div class="col-sm-6">
+                        <input type='text' class="form-control" name='uname' id="uname" />
+                        <p class="rq" id="text-rq"></p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Email :</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" name="email" id="email">
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Password :</label>
+                    <div class="col-sm-6">
+                        <input type="password" class="form-control" name="psw" id="psw">
+                        <span id="message" style="color:red"> </span>
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Re-Enter Password :</label>
+                    <div class="col-sm-6">
+                        <input type="password" class="form-control" name="psw1" id="psw1">
+                        <span id="message1" style="color:red"> </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Mobile Number:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" name="mnum" id="mnum">
+                        <br>
+                        <span id="mn"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Date Of Birth:</label>
+                    <div class="col-sm-6">
+                        <input type="date" class="form-control" name="dob" id="dob" min="1990-01-02" max="2020-01-02">
+                        <br>
+                        <span id="db"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="cars">Choose Your Nearest City:</label>
+                    <div class="col-sm-6">
+                        <select class="form-control" id="city" name="city">
+                            <option>Select Your City</option>
+                            <option value="Vijayawada">Vijayawada</option>
+                            <option value="Rajamahendravaram">Rajamahendravaram</option>
+                            <option value="Kakinada">Kakinada</option>
+                            <option value="Vishakapatnam">Vishakapatnam</option>
+                            <option value="Vizinagaram">Vizinagaram</option>
+                            <option value="Srikakulam">Srikakulam</option>
+                            <option value="Guntur">Guntur</option>
+                            <option value="Ongole">Ongole</option>
+                            <option value="Nellore">Nellore</option>
+                            <option value="Thirupathi">Thirupathi</option>
+                            <option value="Chittor">Chittor</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Gender :</label>
+                    <div class="col-sm-6">
+                        <label class="radio-inline">
+                            <input type="radio" name="gen" id="male" value="Male">Male
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="gen" id="female" value="Female">Female
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="gen" id="others" value="others">Others </label>
+                        <br>
+                        <span id="gn"></span>
+                        <h4 id="error" style="color:red"> </h4>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Select Your Streem :</label>
+                    <div class="col-sm-6">
+                        <label class="radio-inline">
+                            <input type="radio" name="tech" id="civil" value="Civil">Civil
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="tech" id="java" value="Java">Java
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="tech" id="web" value="Web Technologies">Web Technologies </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="tech" id="mec" value="Mechnical">Mechnical </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="tech" id="python" value="Python">Python</label>
+                        <label class="radio-inline">
+                            <input type="radio" name="tech" id="ai" value="AI">AI</label>
+                        <label class="radio-inline">
+                            <input type="radio" name="tech" id="mi" value="MI">MI</label>
+                        <h3 id="disp" style="color:green"> </h3>
+                        <h4 id="error" style="color:red"> </h4>
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="button" class="btn btn-default" value="Submit" onclick="allLetter()">Submit</button>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    function allLetter() {
+        var name = document.getElementById('uname').value;
+        var inputText = document.getElementById('email').value;
+        var pass = document.getElementById("psw").value;
+        var pass1 = document.getElementById('psw1').value;
+        var num = document.getElementById('mnum').value;
+        var dob1 = document.getElementById('dob').value;
+      
+        
+
+         var letters = /^[a-zA-Z\-]+$/;
+         var mailformat = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+         document.getElementById('text-rq').innerHTML = '';
+         /* document.getElementById('text-rq1').innerHTML = ''; */
+         if (!name.match(letters)) {
+             alert("Username Alfabets only");
+          
+         } else if (name.length < 3) {
+             alert("Please input must be above 3 characters only");
+             
+         } else if (name.length > 8) {
+             document.getElementById('message').innerHTML = '<p> User name strong</p>';
+         }
+        //Mail Validation
+		if (inputText.match(mailformat)) {
+			document.form1.email.focus();
+		   
+		} else {
+			alert("You have entered an invalid email address!");
+			if(document.form1 && document.form1.text1){
+				document.form1.text1.focus();
+			}
+		   
+		}
+        //Password validation        
+
+        var capitalletterCase = /[A-Z]/.test(pass);
+
+         if (pass == '') {
+             alert("Please Enter password");
+         } else if (!capitalletterCase) {
+             alert("password must contain one capital letter");
+         } else if (pass.search(/[0-9]/) <= 0) {
+             alert("password must contain one integer value");
+         } else if (pass.length < 3) {
+             alert('password must be above 3 letters');
+         } else if (pass.length > 8) {
+             document.getElementById('message').innerHTML = '<p>Password strong</p>';
+         } else if (pass != pass1) {
+             alert("\nPassword did not match: Please try again...");
+             return false;
+         } else if (pass == pass1) {
+             alert("Passwords are same");
+             return true;
+         }
+        var phoneno = /^\(?([6-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        if (num.match(phoneno)) {
+            document.getElementById('mn').innerHTML = '<p> Mobile Number Okay</p>';
+        } else {
+            alert("Maximum 10 numbers only");
+        }
+        if (dob1 == "") {
+            alert("Date of Birth Must be fill");
+        } else {
+            document.getElementById('db').innerHTML = '<p>Date Of Birth Okay</p>';
+            
+        }
+        if (document.getElementById('male').checked) {
+           document.getElementById('gn')="<p>Your Male</p>";
+        } else if(document.getElementById('female').checked){
+            document.getElementById('gn').innerHTML = '<p>Your Female.</p>';            
+        }else if(document.getElementById('others').checked){
+            document.getElementById('gn').innerHTML = '<p>Your Selected Others</p>';
+            
+        }
+        else {   
+                document.getElementById("error").innerHTML   
+                    = "You have not selected any Gender";   
+            }   
+        if (document.getElementById('civil').checked) {
+            document.getElementById("disp").innerHTML = " <p>Civil Stream was Selected</p>";
+           
+        }else if (document.getElementById('java').checked) {      
+            document.getElementById("disp").innerHTML = "<p> Java Stream was selected</p>";
+        }else if (document.getElementById('mec').checked) {      
+            document.getElementById("disp").innerHTML = "<p> Mechanical Stream was selected</p>";
+        }else if (document.getElementById('web').checked) {           
+            document.getElementById("disp").innerHTML = "<p> Web Stream was selected</p>";
+        }
+        else if (document.getElementById('python').checked) {           
+            document.getElementById("disp").innerHTML = "<p> python Stream was selected</p>";
+        }
+        else if (document.getElementById('ai').checked) {           
+            document.getElementById("disp").innerHTML = "<p> Artificial Stream was selected</p>";
+        }
+        else if (document.getElementById('python').checked) {           
+            document.getElementById("disp").innerHTML = "<p> Mission Learning Stream was selected</p>";
+        }else {   
+                document.getElementById("error").innerHTML   
+                    = "You have not selected any Stream";   
+            } 
+}
+
+</script>
