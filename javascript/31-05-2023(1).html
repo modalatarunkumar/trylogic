@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- creating objects -->
+    <script>
+        // first method by using object literal
+        var employee={
+            id:54,
+            name:'kumar',
+            salary:1500
+        }
+        document.write("<h2>By using object demo</h2>")
+        document.write("Employee id= "+employee.id+
+        "<br>Employee name= "+employee.name+
+        "<br>Employee salary= "+employee.salary);
+        // second method by using new keyword
+        var student=new Object();
+        student.rollno=120;
+        student.name="kumari";
+        student.class=5;
+        document.write("<h2>By using new keyword</h2>");
+        document.write("Student roll number= "+student.rollno+
+        "<br>Student name= "+student.name+
+        "<br>Student class= "+student.class);
+        // third method by using new keyword
+        document.write("<h2>By using this keyword</h2>");
+        function reporter(id,name,section){
+            this.id=id;
+            this.name=name;
+            this.section=section;
+        }
+        var r1=new reporter(101,"naveen","crime");
+        var r2=new reporter(102,"chindu","accidents");
+        document.write("Reporter1 id= "+r1.id+
+        "<br>Reporter1 name= "+r1.name+
+        "<br>Reporter1 section= "+r1.section);
+       document.write("<br><br>Reporter2 id= "+r2.id+
+       "<br>Reporter2 name= "+r2.name+
+       "<br>Reporter section= "+r2.section); 
+    </script>
+</body>
+</html>

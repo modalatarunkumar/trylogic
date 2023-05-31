@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="" name="reg">
+        <table>
+            <tr>
+                <td><label for="dob">Date of birth:</label></td>
+                <td><input type="date" name="dob" id="dob" min="2000-06-01"></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+    <script>
+        var dob=document.getElementById('dob');
+        // dob.max=new Date().toISOString().split("T")[0];
+        // dob.max=new Date().toLocaleString('en-ca').split(',')[0];
+        //dob.max=new Date().toLocaleString('fr-ca').split(' ')[0];
+        var today=new Date();
+        var dd=today.getDate();
+        var mm=today.getMonth()+1; // January is 0
+        var yyyy=today.getFullYear();
+        if(dd<10){
+            dd='0'+dd;
+        }
+        if(mm<10){
+            mm='0'+mm;
+        }
+        today=yyyy+'-'+mm+'-'+dd;
+        dob.max=today;
+    </script>
+</body>
+</html>
