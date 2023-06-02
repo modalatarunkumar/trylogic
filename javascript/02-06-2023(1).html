@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties</title>
+</head>
+<body>
+    <script>
+        // window properties
+        function fun1(){
+            var newWindow=window.open("01-06-2023(1).html","new","height=200px","widht=200px");
+            newWindow.moveTo(100,200);
+            newWindow.close();
+        }
+        function fun2(){
+            var newWindow=window.open("file:///C:/Users/admin/Desktop/Kaushal%20Mahotsav,%20Telangana%20__%20Candidate%20Portal.pdf","new","height=200px","widht=200px");
+            newWindow.moveTo(100,200);
+            newWindow.close()
+        }
+        // fun1();
+
+        // screen properties
+        document.write("screen width: "+screen.width+
+        "<br>Screen availWidth: "+screen.availWidth+
+        "<br>Screen Height: "+screen.height+
+        "<br>Screen availHeight: "+screen.availHeight+
+        "<br>window innerWidth: "+window.innerWidth+
+        "<br>window innerHeight: "+window.innerHeight);
+        // navigator properties
+        document.write("<br>navigator appName: "+navigator.appName+
+        "<br>navigator appCodeName: "+navigator.appCodeName+
+        "<br>navigator platform: "+navigator.patform+
+        "<br>navigator cookie enabled: "+navigator.cookieEnabled+
+        "<br>navigator product: "+navigator.product+
+        "<br>navigator userAgent: "+navigator.userAgent);
+    </script>
+</body>
+</html>
