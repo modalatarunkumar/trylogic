@@ -1,3 +1,11 @@
-li,ul{
-    display: flex;margin-left:10px
+.rght{
+    color: white;
+    /* text-align: right; */
+    float: right;
+    width: 60%;
 }
+.rght h1{font-size:50px;}
+.rght p{font-size:25px;text-align:center;}
+/* .footabt li::before{
+    content: "\f285";
+} */
