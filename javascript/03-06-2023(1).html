@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // location properties
+        document.write("location href: "+window.location.href+
+        "<br>location hostname: "+window.location.hostname+
+        "<br>location host: "+window.location.host+
+        "<br>location pathname: "+window.location.pathname+
+        "<br>location protocol: "+window.location.protocol);
+        //window.location.assign("url");
+        // history properties
+        function prev(){
+            window.history.forward();
+        }
+        function next(){
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
