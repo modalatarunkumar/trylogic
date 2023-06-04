@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        #someText{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    Event listeners
+    <p id="getPara">This is some ttext</p>
+    <h2 id="someText">Heading</h2>
+    <button id="buton" onmouseover="mouseOver()" onclick="mouseClick()">Submit</button>
+    <script>
+        // event listeners
+        document.getElementById('getPara').setAttribute("style","color:red;background:cyan;");
+        document.getElementById('someText').addEventListener('click',paraClick);
+        function paraClick(){
+            document.getElementById('someText').setAttribute("style","color:red;background:orange;")
+        }
+        document.getElementById('someText').addEventListener("mouseover",paraOver);
+        function paraOver(){
+            document.getElementById("someText").setAttribute("style","color:yellow;;background:green;");
+        }
+        function mouseOver(){
+            document.getElementById('buton').setAttribute("style","color:yellow;")
+        }
+        function mouseClick(){
+            document.getElementById('buton').setAttribute("style","color:red;")
+        }
+
+    </script>
+</body>
+</html>
