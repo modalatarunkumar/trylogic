@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student={
+            name:'kumar',
+            age:20,
+            'phone number':0988
+        }
+        document.write(student.name+"  "+student["phone number"]);
+        student.name="vinod";
+        student.id=123;
+        student['result']='pass';
+        delete student.age;
+        for(i in student)
+        document.write("<br>"+i+" : "+student[i]);
+        var myplants=[
+            {
+                type:"flowers",
+                list:[
+                    'rose',
+                    "Tulips",
+                    "dandelion"
+                ]
+            },
+            {
+                type:'trees',
+                list:[
+                    'fir',
+                    'pine',
+                    'britch',
+                ]
+            }
+        ];
+        document.write("<br>"+myplants[0]['list'][0]+"<br>"+myplants[0].list[0])
+    </script>
+</body>
+</html>
