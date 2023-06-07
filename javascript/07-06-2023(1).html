@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <p class="null" data-val="400">00</p>
+        </div>
+        <div class="card">
+            <p class="null" data-val="600">00</p>
+
+        </div>
+        <div class="card">
+            <p class="null" data-val="500">00</p>
+
+        </div>
+        <div class="card">
+            <p class="null" data-val="1200">00</p>
+
+        </div>
+    </div>
+    <script>
+        var values=document.querySelectorAll('.null');
+        var interval=5000;
+        values.forEach(function(value) {
+            var startvalue=0;
+            var endvalue=parseInt(value.getAttribute('data-val'));
+            var duration=Math.floor(interval/endvalue);
+            var counter=setInterval(function(){
+                startvalue += 1;
+                value.textContent=startvalue;
+                if(startvalue==endvalue){
+                    clearInterval(counter);
+                }
+            },duration)
+        })
+    </script>
+</body>
+</html>
