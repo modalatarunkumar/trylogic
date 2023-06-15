@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width:25%;
+            /* background-color:red; */
+            float:left;
+            height:200px;
+            text-align: center;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="num" data-val="400">0</p>
+        <p class="num" data-val="2000">0</p>
+        <p class="num" data-val="1200">0</p>
+        <p class="num" data-val="600">0</p>
+    </div>
+    <script>
+        var elements=document.querySelectorAll('.num');
+        var interval=20000;
+        elements.forEach(function(element){
+            var startvalue=0;
+            var endvalue=parseInt(element.getAttribute('data-val'));
+            var duration=Math.floor(interval/endvalue);
+            // var duration=1;
+            var counter=setInterval(function(){
+                startvalue+=1;
+                element.textContent=startvalue;
+                if(startvalue==endvalue){
+                    clearInterval(counter);
+                }
+            },duration)
+        })
+    </script>
+</body>
+</html>
