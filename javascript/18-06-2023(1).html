@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // local and global variables
+        var glob=20;
+        function fun(){
+            var loc=50;
+            document.write(glob+" "+loc);
+        }
+        // swapping
+        var a=10;
+        var b=20;
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        document.write(a+"   "+b+"<br>");
+        // reverse string
+        var str="abcd";
+        var len=str.length;
+        for(let i=0;i<len;i++){
+            document.write(str[len-i-1]);
+        }
+        // sorting
+        var x=[20,30,10,5,100,125,220];
+        for(let i=0;i<x.length;i++){
+            for(let j=i;j<x.length;j++){
+                if(x[i]<x[j]){
+                    let z=x[i];
+                    x[i]=x[j];
+                    x[j]=z;
+                }
+            }
+        }
+        document.write("<br>"+x);
+        // sorting ended
+        // top 3 marks
+        // var x=[20,30,10,5,100,125,220];
+        document.write("<br>Top 3 marks:")
+        for(let i=0;i<3;i++){
+            document.write("<br>"+x[i])
+        }
+        // last 5 marks
+        document.write("Least 5 :");
+        for(let i=x.length;i>x.length-6 ;i--){
+            document.write("<br>"+x[i]);
+        }
+        // marks average
+        var sum=0;
+        for(let i=0;i<x.length;i++)
+        sum+=x[i];
+        var avg=sum/x.length;
+        document.write('<br>Average : '+avg);
+        for(let i=0;i<x.length;i++)
+        if(!(x[i]>80)){
+            document.write("<br>"+x[i]);
+        }
+    </script>
+</body>
+</html>
