@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <p>Cost of each product is <span id="cost"></span> rupees</p>
+        <label for="amt">Enter the amount:</label>
+        <input type="number" name="amt" id="amt">
+        <button onclick="getitems()" type="button">Buy</button>
+        <p id="result"></p>
+    </form>
+    <script>
+        var itemcost=5;
+        document.getElementById("cost").innerHTML=itemcost;
+        const getitems =()=>{
+            var amount=parseInt(document.getElementById("amt").value);
+            if(amount<itemcost){
+                alert("no packets available");
+            }
+            else{
+                var str="";
+            str+="You get "+Math.floor(amount/itemcost)+" packets";
+            str+="<br>Change you get is "+(amount%itemcost)+" rupees";
+            document.getElementById('result').innerHTML=str;
+
+            }
+        }
+    </script>
+</body>
+</html>

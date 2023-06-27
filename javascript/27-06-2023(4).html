@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var marks=new Array();
+        for(let i=0;i<13;i++){
+            var temp=parseInt(prompt("Enter "+(i+1)+" person percentage"));
+            if(temp>=0&&temp<=100)
+                marks.push(temp);
+        }
+        var len=marks.length;
+        marks.sort((a,b)=>a-b)
+        for(let i=0;i<3;i++)
+        document.write("<br>Last Three "+marks[i]);
+        for(let i=len-1;i>len-4;i--)
+        document.write("<br>Top three "+marks[i]);
+        var sum=0;
+        for(let i=0;i<len;i++)
+        sum+=marks[i];
+        document.write("<br>Average marks "+(sum/len));
+    </script>
+</body>
+</html>
